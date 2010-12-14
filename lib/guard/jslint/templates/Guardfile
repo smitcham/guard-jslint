@@ -1,0 +1,5 @@
+guard 'jslint' do
+  watch('^(app/javascripts/(.*)\.js)')      {|m| m[1] }
+  watch('^(app/javascripts/(.*)/(.*)\.js)') {|m| m[1] }
+  watch('^(public/javascripts/(.*)\.js)')   {|m| m[1] }
+end
