@@ -7,7 +7,7 @@ module Guard
     def run_on_change(paths)
       paths.each do |path|
         puts "Running jslint for #{path}:"
-        system("node '#{File.expand_path('./lib/guard/jslint')}/jslint.js' '#{path}'")
+        system("node app/javascripts/plugins/jslint.js #{path}")
       end
     end
     
