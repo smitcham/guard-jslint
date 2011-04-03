@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ['fw@cubiflex.com']
   s.homepage    = 'https://livesein.eu'
   s.summary     = 'A guard plugin to run jslint on javascript files'
-  s.description = 'Requires node to be present in the PATH'
+  s.description = 'Requires node and iconv to be present in the PATH'
   
   s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project         = 'guard-jslint'

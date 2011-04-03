@@ -7,8 +7,10 @@ module Guard
     def run_on_change(paths)
       system("clear")
       paths.each do |path|
-        puts "Running #{__FILE__}/jslint.js for #{path}:"
-        system("node #{__FILE__}/jslint.js #{path}")
+        puts "Running jsLint on #{path}:"
+        system("node #{File.dirname(__FILE__)}/jslint.js #{path}")
+        puts "Checking #{path} for utf-8 charachters:"
+        system("iconv -f utf8 -t ascii #{path}")
       end
     end
     

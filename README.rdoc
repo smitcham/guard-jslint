@@ -1,4 +1,5 @@
 = Guard::Jslint
 
-This is a guard plugin to run jslint on javascript files.
-It requires node to be present in the PATH.
+This is a guard plugin to run jslint on javascript files. It also checks for utf-8 characters that render js files uncrompressable by the YUI compressor.
+
+Guard::Jslint requires node and iconv to be present in the PATH.
