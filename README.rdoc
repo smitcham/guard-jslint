@@ -1,1 +1,4 @@
 = Guard::Jslint
+
+This is a guard plugin to run jslint on javascript files.
+It requires node to be present in the PATH.

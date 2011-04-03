@@ -1,12 +1,8 @@
 source "http://rubygems.org"
-
-# Specify your gem's dependencies in guard-jslint.gemspec
-gemspec
-
 require 'rbconfig'
 
 if Config::CONFIG['target_os'] =~ /darwin/i
-  gem 'rb-fsevent', '>= 0.3.9'
+  gem 'rb-fsevent', '>= 0.4.0'
   gem 'growl',      '~> 1.0.3'
 end
 if Config::CONFIG['target_os'] =~ /linux/i
