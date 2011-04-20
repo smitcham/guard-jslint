@@ -12,7 +12,7 @@ module Guard
         puts
         puts
         puts ">> checking #{path} for utf-8 charachters."
-        system("iconv -f utf8 -t ascii #{path} 2>&1")
+        system("iconv -f utf8 -t ascii #{path} 2>&1 1>/dev/null")
       end
     end
     
