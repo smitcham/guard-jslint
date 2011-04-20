@@ -10,7 +10,7 @@ module Guard
         puts ">> running jsLint on #{path}:"
         system("node #{File.dirname(__FILE__)}/jslint.js #{path}")
         puts "\n>> checking #{path} for utf-8 charachters."
-        system("iconv -f utf8 -t ascii #{path} >/dev/null")
+        system("iconv -f utf8 -t ascii #{path} 2>&1")
       end
     end
     
