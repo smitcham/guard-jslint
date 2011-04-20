@@ -9,7 +9,9 @@ module Guard
       paths.each do |path|
         puts ">> running jsLint on #{path}:"
         system("node #{File.dirname(__FILE__)}/jslint.js #{path}")
-        puts "\n>> checking #{path} for utf-8 charachters."
+        puts
+        puts
+        puts ">> checking #{path} for utf-8 charachters."
         system("iconv -f utf8 -t ascii #{path} 2>&1")
       end
     end
