@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'guard-jslint'
   s.version     = Guard::JslintVersion::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Frank Wöckener']
+  s.authors     = ['Frank Woeckener']
   s.email       = ['fw@cubiflex.com']
   s.homepage    = 'https://livesein.eu'
   s.summary     = 'A guard plugin to run jslint on javascript files'
